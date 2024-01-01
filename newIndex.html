@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+    <HTML>
+      <HEAD>
+        <TITLE>Home Page</TITLE> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <link rel="stylesheet" href="css/newStyle.css">
+         
+
+        <script>
+          function functionfocus(){document.loginpage.email.focus();}
+        </script>
+      </HEAD>
+      <Body onload="functionfocus()">
+        <header>
+          
+          <table><!--style="overflow-x:auto;"-->
+            <tr>
+              <td><img src="images/excelya.png"></td>
+        <!--<a href="index.html">Home</a>-->
+              <td><h1> <!--style="font-size: 2vw;"-->IRIS Remote Login</h1></td>
+            </tr>
+            
+          </table>
+          <div class="myBox">
+          </div>
+          </header>
+          <br><br>
+        </main>
+            <div class="center">
+            <form name="loginpage">  
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+            <br><br>
+            <label for="email">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="password" id="password" name="password" placeholder="P@s5wrod" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" >
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="button">Sign in</button><br><br>
+            <a href="passwordReset.html">Forgotten password?</a>
+            </form>
+            
+            </div>
+            
+            <div class="security">
+            <p>
+              Security
+             </p>
+            <p style="color:red;">
+              Warning: By logging in to this web page, you confirm that this computer complies with Excellya's security policy.
+            </p>
+            </div>
+          </main>
+        <footer>
+        <div class="warning">
+          <p>To protect against unauthorized access, your IRIS Remote Desktop session will automatically time out after a period of inactivity. If your session ends, refresh your browser and sign in again.</p>
+          </div>
+        </footer>
+      </Body>  
+    </HTML>
+    
+  
